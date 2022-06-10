@@ -4,9 +4,9 @@ A program used to extract measurements from EOS spine scans
 # Content
 - [Introduction](#Introduction)
 - [Using Mizzou 3D SPinE](#Using-Mizzou-3D-SPinE)
-  - [Setup](#Setup)
-  - [EOS File Preparation](#EOS-File-Preparation)
-  - [Data Aggregations](#Data-Aggregations)
+  - [Step 1: Setup](#Step-1-Setup)
+  - [Step 2: EOS File Preparation](#Step-2-EOS-File-Preparation)
+  - [Step 3: Data Aggregations](#Step-3-Data-Aggregations)
 - [Results](#Results)
 
 
@@ -19,9 +19,9 @@ The Detailed Report Excel file is composed of multiple tables within multiple Ex
 The **Mizzou 3D SPinE** program does this by first locating the listed table and corresponding headers and then subsequently scans all measurements within that table, transforming all loaded variable names and measurements data into one formatted row of measurement values. This row of data, corresponding to one assessment for one patient is then concatenated into the formatted, compiled output that is exported as an Excel file. Assessments are concatenated by patient identifying number and date of assessment such that serial assessments for patients can be easily compiled. Any measurements which are missing or empty from the EOS Advanced Spine Workflow .xlsx file are skipped. 
 
 # Using Mizzou 3D SPinE
-This program is developed in R 4.1.2 with an R package “openxlsx” which will be automatically installed when this program is initially deployed. Before conducting data aggregations, users need to [download the R program](#Downloading-RStudio) and the [load the Mizzou 3D SPinE.R*](#Loading-Mizzou-3D-SPinE) script, as well as getting the EOS file organized as described in the [EOS File Preparation](#EOS-File-Preparation) section. [An example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data) of [organized EOS files](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Data) and the [merged data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Output) is provided.
+This program is developed in R 4.1.2 with an R package “openxlsx” which will be automatically installed when this program is initially deployed. Before conducting data aggregations, users need to [download the R program](#Downloading-RStudio) and the [load the Mizzou 3D SPinE.R](#Loading-Mizzou-3D-SPinE) script, as well as getting the EOS file organized as described in the [EOS File Preparation](#EOS-File-Preparation) section. [An example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data) of [organized EOS files](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Data) and the [merged data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Output) is provided.
 
-## Setup
+## Step 1: Setup
 ### Downloading RStudio
 Users can find and download RStudio Desktop at [https://www.rstudio.com](https://www.rstudio.com/products/rstudio/download/#download).
 
@@ -52,7 +52,7 @@ where "FilePath" denotes the local path where you saved the “Mizzou 3D SPinE.R
 
 
 
-## EOS File Preparation
+## Step 2: EOS File Preparation
 To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient should be saved in one folder, named using the patient identifier. Then, the associated Detailed Report (.xslx file) for each EOS assessment for a patient must be placed within a subfolder, located within each patient folder, and should be named using the EOS assessment date using the “MM-DD-YYYY” format. The resulting file structure should be that all Detailed Report files associated with each patient-specific EOS assessment has its own folder, named using the date, and that these are all stored within the main folder for each patient, named using the numerical patient identifier (Figure 2). An example of the organized EOS files is available at [Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Data).
 
 ---
@@ -68,7 +68,7 @@ To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient sh
 
 Further, all patient assessments intended for extraction should be saved within a single parent folder, for example, “Test Data”, as shown in Figure 2.  The parent folder should not contain any files, data, or subfolders which do not result from the EOS Advanced Spine Workflow.  Empty folders should also not be saved within the parent folder. 
 
-## Data Aggregations
+## Step 3: Data Aggregations
 Once the EOS files have been organized, the data aggregations can be conducted by typying the following codes in RStudio and press Enter to process:
 
 ```r
