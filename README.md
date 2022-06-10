@@ -19,7 +19,7 @@ The Detailed Report Excel file is composed of multiple tables within multiple Ex
 The **Mizzou 3D SPinE** program does this by first locating the listed table and corresponding headers and then subsequently scans all measurements within that table, transforming all loaded variable names and measurements data into one formatted row of measurement values. This row of data, corresponding to one assessment for one patient is then concatenated into the formatted, compiled output that is exported as an Excel file. Assessments are concatenated by patient identifying number and date of assessment such that serial assessments for patients can be easily compiled. Any measurements which are missing or empty from the EOS Advanced Spine Workflow .xlsx file are skipped. 
 
 # Using Mizzou 3D SPinE
-This program is developed in R 4.1.2 with an R package “openxlsx” which will be automatically installed when this program is initially deployed. Before conducting data aggregations, users need to [download the R program](#Downloading-RStudio) and the [load the Mizzou 3D SPinE.R*](#Loading-Mizzou-3D-SPinE) script, as well as getting the EOS file organized as described in the [EOS File Preparation](#EOS-File-Preparation) section.
+This program is developed in R 4.1.2 with an R package “openxlsx” which will be automatically installed when this program is initially deployed. Before conducting data aggregations, users need to [download the R program](#Downloading-RStudio) and the [load the Mizzou 3D SPinE.R*](#Loading-Mizzou-3D-SPinE) script, as well as getting the EOS file organized as described in the [EOS File Preparation](#EOS-File-Preparation) section. [An example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data) of [organized EOS files](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Data) and the [merged data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Output) is provided.
 
 ## Setup
 ### Downloading RStudio
@@ -53,7 +53,7 @@ where "FilePath" denotes the local path where you saved the “Mizzou 3D SPinE.R
 
 
 ## EOS File Preparation
-To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient should be saved in one folder, named using the patient identifier. Then, the associated Detailed Report (.xslx file) for each EOS assessment for a patient must be placed within a subfolder, located within each patient folder, and should be named using the EOS assessment date using the “MM-DD-YYYY” format. The resulting file structure should be that all Detailed Report files associated with each patient-specific EOS assessment has its own folder, named using the date, and that these are all stored within the main folder for each patient, named using the numerical patient identifier (Figure 2). 
+To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient should be saved in one folder, named using the patient identifier. Then, the associated Detailed Report (.xslx file) for each EOS assessment for a patient must be placed within a subfolder, located within each patient folder, and should be named using the EOS assessment date using the “MM-DD-YYYY” format. The resulting file structure should be that all Detailed Report files associated with each patient-specific EOS assessment has its own folder, named using the date, and that these are all stored within the main folder for each patient, named using the numerical patient identifier (Figure 2). An example of the organized EOS files is available at [Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Data).
 
 ---
 <p align="center">
@@ -101,6 +101,6 @@ Once the input and output file locations have been specified, Mizzou 3D SPinE  w
 # Results
 Extracted measurements for each assessment are combined into one row; patients with multiple assessments will have each assessment appear in one row, indexed by visit date. In the output file, the aggregated measurements are color coded to denote the original table from which the measurement was extracted. Further, all variable names for extracted, measurements are named using the abbreviation from the table headers in the Detailed Report Excel file rom the EOS Advanced Spine Workflow. For example, all measurements from the “Scolisosis Parameters” table are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb angle of the thoracolumbar deformity in the patient plane. 
 
-In the output file, one tab contains all the aggregated measurements and a separate tab includes a data dictionary that defines all measures and indicates the appropriate color coding. 
+In the output file (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Output)), one tab contains all the aggregated measurements and a separate tab includes a data dictionary that defines all measures and indicates the appropriate color coding. 
 
 
