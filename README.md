@@ -23,7 +23,7 @@ This program is developed in R 4.1.2 with an R package “openxlsx” which will
 
 ## Setup
 ### Downloading RStudio
-Users can find and download RStudio at https://www.rstudio.com.
+Users can find and download RStudio Desktop at [https://www.rstudio.com](https://www.rstudio.com/products/rstudio/download/#download).
 
 ### Loading Mizzou 3D SPinE
 The program can be loaded in R with the following codes:
@@ -31,10 +31,10 @@ The program can be loaded in R with the following codes:
 if(!require("devtools")){
   install.packages("devtools")
 }
-devtools::source_url("GITHUBLINK/Mizzou 3D SPinE.R")
+devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R")
 ```
 
-Alternaltiavely, user can download the program "Mizzou 3D SPinE.R" at XXXX and manually load the program with:
+Alternaltiavely, user can download the program "Mizzou 3D SPinE.R" [here](https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R) and manually load the program with:
 ```r
 source("FilePath/Mizzou 3D SPinE.R")
 ```
