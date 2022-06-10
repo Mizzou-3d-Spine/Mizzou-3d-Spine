@@ -34,7 +34,7 @@ if(!require("devtools")){
 devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R")
 ```
 
-Alternaltiavely, user can download the program "Mizzou 3D SPinE.R" [here](https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R) and manually load the program with:
+Alternaltiavely, user can download the program "Mizzou 3D SPinE.R" by right clicking [here](https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R) and choose "save link as...". The program can be manually loaded with the following codes:
 ```r
 source("FilePath/Mizzou 3D SPinE.R")
 ```
