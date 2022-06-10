@@ -33,6 +33,7 @@ if(!require("devtools")){
 }
 devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R")
 ```
+**Figure 1: Loading the Mizzou 3D SPinE.R program**
 ![Figure 1](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Loading_Program.png)
 
 Alternaltiavely, user can download the program "Mizzou 3D SPinE.R" by right clicking [here](https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R) and choose "save link as...". The program can be manually loaded with the following codes:
@@ -46,6 +47,7 @@ where "FilePath" denotes the local path where you saved the “Mizzou 3D SPinE.R
 ## EOS File Preparation
 To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient should be saved in one folder, named using the patient identifier. Then, the associated Detailed Report (.xslx file) for each EOS assessment for a patient must be placed within a subfolder, located within each patient folder, and should be named using the EOS assessment date using the “MM-DD-YYYY” format. The resulting file structure should be that all Detailed Report files associated with each patient-specific EOS assessment has its own folder, named using the date, and that these are all stored within the main folder for each patient, named using the numerical patient identifier (Figure 2). 
 
+**Figure 2: EOS File Preparation**
 ![Figure 2](https://github.com/CastleLi/EOSDataExtraction/blob/main/Figure/Fig1.PNG)
 
 Further, all patient assessments intended for extraction should be saved within a single parent folder, for example, “Test Data”, as shown in Figure 2.  The parent folder should not contain any files, data, or subfolders which do not result from the EOS Advanced Spine Workflow.  Empty folders should also not be saved within the parent folder. 
@@ -58,6 +60,14 @@ datamerge()
 ```
 
 This program would direct the user to specify the parent folder where the patientreports were saved  (Figure 3), and the output folder file path where user would like the aggregated data to be saved (Figure 4). The output folder must be outside of the parent folder. Once the input and output file locations have been specified, Mizzou 3D SPinE  will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the Mizzou 3D SPinE was run.
+
+**Figure 3: Selecting the path of parent folder**
+![Figure 3](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Input.PNG)
+
+**Figure 4: Selecting the path of merged data**
+![Figure 4](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Output.PNG)
+
+
 
 # Results
 Extracted measurements for each assessment are combined into one row; patients with multiple assessments will have each assessment appear in one row, indexed by visit date. In the output file, the aggregated measurements are color coded to denote the original table from which the measurement was extracted. Further, all variable names for extracted, measurements are named using the abbreviation from the table headers in the Detailed Report Excel file rom the EOS Advanced Spine Workflow. For example, all measurements from the “Scolisosis Parameters” table are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb angle of the thoracolumbar deformity in the patient plane. 
