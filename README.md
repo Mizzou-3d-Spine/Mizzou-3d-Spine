@@ -37,9 +37,10 @@ devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3
 ---
 <p align="center">
     <em> Figure 1: Loading the Mizzou 3D SPinE.R program </em> 
+</p>
 
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Loading_Program.png" width="600" height="600">
-
+<p align="center">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Loading_Program.png" width="800">
 </p>
 ---
 
