@@ -39,7 +39,7 @@ devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3
     <em> Figure 1: Loading the Mizzou 3D SPinE.R program </em> 
 </p>
 
-![Figure 1](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Loading_Program.png)
+![[Figure 1|width=100px]](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Loading_Program.png)
 
 ---
 
@@ -56,7 +56,7 @@ To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient sh
 
 ---
 <p align="center">
-    **Figure 2: EOS File Preparation** 
+    <em> Figure 2: EOS File Preparation </em>
 </p>
 
 ![Figure 2](https://github.com/CastleLi/EOSDataExtraction/blob/main/Figure/Fig1.PNG)
@@ -74,13 +74,20 @@ datamerge()
 
 This program would direct the user to specify the parent folder where the patientreports were saved  (Figure 3), and the output folder file path where user would like the aggregated data to be saved (Figure 4). The output folder must be outside of the parent folder. Once the input and output file locations have been specified, Mizzou 3D SPinE  will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the Mizzou 3D SPinE was run.
 
-**Figure 3: Selecting the path of parent folder**
+---
+<p align="center">
+    <em> Figure 3: Selecting the path of parent folder </em>
+</p>
+
 ![Figure 3](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Input.PNG)
 
-**Figure 4: Selecting the path of merged data**
+<p align="center">
+    <em> Figure 4: Selecting the path of merged data </em>
+</p>
+
 ![Figure 4](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Output.PNG)
 
-
+---
 
 # Results
 Extracted measurements for each assessment are combined into one row; patients with multiple assessments will have each assessment appear in one row, indexed by visit date. In the output file, the aggregated measurements are color coded to denote the original table from which the measurement was extracted. Further, all variable names for extracted, measurements are named using the abbreviation from the table headers in the Detailed Report Excel file rom the EOS Advanced Spine Workflow. For example, all measurements from the “Scolisosis Parameters” table are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb angle of the thoracolumbar deformity in the patient plane. 
