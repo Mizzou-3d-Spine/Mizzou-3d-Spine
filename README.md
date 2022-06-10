@@ -60,7 +60,9 @@ To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient sh
     <em> Figure 2: EOS File Preparation </em>
 </p>
 
-![Figure 2](https://github.com/CastleLi/EOSDataExtraction/blob/main/Figure/Fig1.PNG)
+<p align="center">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/EOS_Files.PNG" width="800">
+</p>
 
 ---
 
@@ -80,13 +82,17 @@ This program would direct the user to specify the parent folder where the patien
     <em> Figure 3: Selecting the path of parent folder </em>
 </p>
 
-![Figure 3](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Input.PNG)
+<p align="center">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Input.PNG" width="600">
+</p>
 
 <p align="center">
     <em> Figure 4: Selecting the path of merged data </em>
 </p>
 
-![Figure 4](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Output.PNG)
+<p align="center">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Data_Aggregation_Output.PNG" width="600">
+</p>
 
 ---
 
