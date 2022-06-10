@@ -33,8 +33,15 @@ if(!require("devtools")){
 }
 devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R")
 ```
-**Figure 1: Loading the Mizzou 3D SPinE.R program**
+
+---
+<p align="center">
+    <em> Figure 1: Loading the Mizzou 3D SPinE.R program </em> 
+</p>
+
 ![Figure 1](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Figure/Loading_Program.png)
+
+---
 
 Alternaltiavely, user can download the program "Mizzou 3D SPinE.R" by right clicking [here](https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R) and choose "save link as...". The program can be manually loaded with the following codes:
 ```r
@@ -47,8 +54,14 @@ where "FilePath" denotes the local path where you saved the “Mizzou 3D SPinE.R
 ## EOS File Preparation
 To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient should be saved in one folder, named using the patient identifier. Then, the associated Detailed Report (.xslx file) for each EOS assessment for a patient must be placed within a subfolder, located within each patient folder, and should be named using the EOS assessment date using the “MM-DD-YYYY” format. The resulting file structure should be that all Detailed Report files associated with each patient-specific EOS assessment has its own folder, named using the date, and that these are all stored within the main folder for each patient, named using the numerical patient identifier (Figure 2). 
 
-**Figure 2: EOS File Preparation**
+---
+<p align="center">
+    **Figure 2: EOS File Preparation** 
+</p>
+
 ![Figure 2](https://github.com/CastleLi/EOSDataExtraction/blob/main/Figure/Fig1.PNG)
+
+---
 
 Further, all patient assessments intended for extraction should be saved within a single parent folder, for example, “Test Data”, as shown in Figure 2.  The parent folder should not contain any files, data, or subfolders which do not result from the EOS Advanced Spine Workflow.  Empty folders should also not be saved within the parent folder. 
 
