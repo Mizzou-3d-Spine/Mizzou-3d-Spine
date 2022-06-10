@@ -26,7 +26,7 @@ This program is developed in R 4.1.2 with an R package “openxlsx” which will
 Users can find and download RStudio Desktop at [https://www.rstudio.com](https://www.rstudio.com/products/rstudio/download/#download).
 
 ### Loading Mizzou 3D SPinE
-The program can be loaded in R by copying the following codes in RStudio and press Enter to continue (Figure 1):
+The program can be loaded in R by copying the following codes in RStudio and **press Enter** to continue (Figure 1):
 ```r
 if(!require("devtools")){
   install.packages("devtools")
@@ -69,7 +69,7 @@ To use the Mizzou 3D SPinE, all EOS files of each assessment for each patient sh
 Further, all patient assessments intended for extraction should be saved within a single parent folder, for example, “Test Data”, as shown in Figure 2.  The parent folder should not contain any files, data, or subfolders which do not result from the EOS Advanced Spine Workflow.  Empty folders should also not be saved within the parent folder. 
 
 ## Step 3: Data Aggregations
-Once the EOS files have been organized, the data aggregations can be conducted by typying the following codes in RStudio and press Enter to process:
+Once the EOS files have been organized, the data aggregations can be conducted by typying the following codes in RStudio and **press Enter** to process:
 
 ```r
 datamerge()
