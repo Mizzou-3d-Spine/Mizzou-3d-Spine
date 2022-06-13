@@ -82,7 +82,7 @@ This program would direct the user to specify the parent folder where the patien
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Input.PNG" width="400">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Input.PNG" width="600">
 </p>
 
 <p align="center">
@@ -90,7 +90,7 @@ This program would direct the user to specify the parent folder where the patien
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Output.PNG" width="400">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Output.PNG" width="600">
 </p>
 
 ---
