@@ -19,7 +19,7 @@ The Detailed Report Excel file is composed of multiple tables within multiple Ex
 The **Mizzou 3D SPinE** program does this by first locating the listed table and corresponding headers and then subsequently scans all measurements within that table, transforming all loaded variable names and measurements data into one formatted row of measurement values. This row of data, corresponding to one assessment for one patient is then concatenated into the formatted, compiled output that is exported as an Excel file. Assessments are concatenated by patient identifying number and date of assessment such that serial assessments for patients can be easily compiled. Any measurements which are missing or empty from the EOS Advanced Spine Workflow .xlsx file are skipped. 
 
 # Using Mizzou 3D SPinE
-This program is developed in R 4.1.2 with an R package “openxlsx” which will be automatically installed when this program is initially deployed. Before conducting data aggregations, users need to [download the R program](#Downloading-RStudio) and the [load the Function.R](#Loading-Mizzou-3D-SPinE) script, as well as getting the EOS file organized as described in the [EOS File Preparation](#Step-2-EOS-File-Preparation) section. [An example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data) of [organized EOS files](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Data) and the [merged data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Output) is provided.
+This program is developed in R 4.1.2 with an R package “openxlsx” which will be automatically installed when this program is initially deployed. Before conducting data aggregations, users need to [download the R program](#Downloading-RStudio) and the [load the Function.R](#Loading-Mizzou-3D-SPinE) script, as well as getting the EOS file organized as described in the [EOS File Preparation](#Step-2-EOS-File-Preparation) section. [An example](https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Mizzou%203D%20SPinE.R) of loading and running Mizzou 3D SPinE is available. [The example data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data) of [organized EOS files](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Data) and the [merged outputs](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Test%20Output) are also provided.
 
 ## Step 1: Setup
 ### Downloading RStudio
@@ -49,7 +49,6 @@ Alternaltiavely, user can download the program "Function.R" by right clicking [h
 source("FilePath/Function.R")
 ```
 where "FilePath" denotes the local path where you saved the “Function.R” on your computer. 
-
 
 
 ## Step 2: EOS File Preparation
