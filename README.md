@@ -49,7 +49,6 @@ devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3
 ---
 
 ## Step 3: Data Aggregations
-##press enter?
 Once the sterEOS Advanced Spine Workflow files have been organized, the data aggregations can be conducted by typying the following codes in RStudio and **press Enter** to process:
 
 ```r
