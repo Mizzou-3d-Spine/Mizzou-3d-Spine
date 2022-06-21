@@ -20,7 +20,7 @@ To use **Mizzou 3D SPinE**, files must be named and organized in a specified for
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/EOS_Files.PNG" width="400">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/FilePath.png" width="400">
 </p>
 
 ---
