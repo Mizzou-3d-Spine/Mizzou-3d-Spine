@@ -17,6 +17,7 @@ This file contains the measurements for
   - Intervertebral rotations with frontal, lateral, and axial perspectives in the radio plane
   - Pelvic parameters for both the patient and Radio plane
   - 3D Tools  
+
 For each of these sections, the name of each measurement, along with the measured value, are extracted, such that each measurement label is formatted as a column name and the measured value is extracted as the value for that column, in the resulting **Mizzou 3D SPinE** output file.  The output file is formatted such that each row of data, corresponds to one assessment for one individual; multiple assessments for one individual are organized by their participant id and date of assesmsent, in separate rows. Any measurements that are missing or empty from the sterEOS Advanced Spine Workflow .xlsx file are empty in the output file. 
 
 ## Step 1: sterEOS Advanced Spine Workflow File Preparation
