@@ -39,16 +39,8 @@ To use **Mizzou 3D SPinE**, files must be named and organized in a specified for
 Users can find and download RStudio Desktop at [https://www.rstudio.com](https://www.rstudio.com/products/rstudio/download/#download).
 
 ### Loading Mizzou 3D SPinE
-**Mizzou 3D SPinE** to continue (Figure 2):
-```r
-if(!require("devtools")){
-  install.packages("devtools")
-}
-devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Function.R")
 
-datamerge()
-```
-
+Once the users open RStudio, it should appear like this (Figure 2):
 ---
 <p align="center">
     <em> Figure 2: Loading the Function.R program </em> 
@@ -58,7 +50,15 @@ datamerge()
   <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Loading_Program.png" width="800">
 </p>
 ---
+Then users could copy the following code and paste into RStudio, then press the "Enter" key:
+```r
+if(!require("devtools")){
+  install.packages("devtools")
+}
+devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Function.R")
 
+datamerge()
+```
 ## Step 3: Running Mizzou 3D SPinE
 This program directs the user to specify the parent folder where all sterEOS Advanced Spine Workflow patient assessments were saved (Figure 3), and the output folder file path where the user would like the aggregated data to be saved (Figure 4). The output folder must be outside of the parent folder. 
 
