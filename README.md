@@ -43,16 +43,16 @@ Once the users open RStudio, it should appear like this (Figure 2):
 
 ---
 <p align="center">
-    <em> Figure 2: Loading the Function.R program </em> 
+    <em> Figure 2: RStudio window </em> 
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Loading_Program.png" width="800">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/R_Studio.png" width="800">
 </p>
 ---
 
 
-Then users could copy the following code and paste into RStudio, then press the "Enter" key:
+Then users could copy the following code and paste into RStudio, then press the "Enter" key (Figure 3):
 
 
 ```r
@@ -64,13 +64,23 @@ devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3
 datamerge()
 ```
 
+---
+<p align="center">
+    <em> Figure 3: Loading the Function.R program </em> 
+</p>
+
+<p align="center">
+  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Loading_Program.PNG" width="800">
+</p>
+---
+
 
 ## Step 3: Running Mizzou 3D SPinE
-This program directs the user to specify the parent folder where all sterEOS Advanced Spine Workflow patient assessments were saved (Figure 3), and the output folder file path where the user would like the aggregated data to be saved (Figure 4). The output folder must be outside of the parent folder. 
+This program directs the user to specify the parent folder where all sterEOS Advanced Spine Workflow patient assessments were saved (Figure 4), and the output folder file path where the user would like the aggregated data to be saved (Figure 5). The output folder must be outside of the parent folder. 
 
 ---
 <p align="center">
-    <em> Figure 3: Selecting the path of parent folder </em>
+    <em> Figure 4: Selecting the path of parent folder </em>
 </p>
 
 <p align="center">
@@ -78,7 +88,7 @@ This program directs the user to specify the parent folder where all sterEOS Adv
 </p>
 
 <p align="center">
-    <em> Figure 4: Selecting the path of merged data </em>
+    <em> Figure 5: Selecting the path of merged data </em>
 </p>
 
 <p align="center">
