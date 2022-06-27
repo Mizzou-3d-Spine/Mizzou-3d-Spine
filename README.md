@@ -9,7 +9,7 @@ A program used to extract measurements from sterEOS Advanced Spine Workflow outp
 - [Understanding the Mizzou 3D SPinE Result File ](#Understanding-the-Mizzou-3D-SPinE-Result-File)
 
 # Introduction
-**Mizzou 3D SPinE** is used to organize and extract measurements from many sterEOS Advanced Spine Workflow assessments, which can be mulitple assessments for an individual and/or many individuals.  All measurements from the sterEOS Advanced Spine Workflow are located in the Excel file of the sterEOS Advanced Spine Workflow resulting infiles. 
+**Mizzou 3D SPinE** is used to extract and organize measurement data taken from sterEOS Advanced Spine Workflow assessments.  **Mizzou 3D SPinE** is capable of extracting measurement data taken from multiple assessments for an individual and/or many individuals.
 This file contains the measurements for 
   - Scoliosis Parameters
   - Sagittal Balance
