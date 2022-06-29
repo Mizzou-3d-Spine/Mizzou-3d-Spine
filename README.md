@@ -3,9 +3,10 @@ A program used to extract measurements from sterEOS Advanced Spine Workflow outp
 
 # Content
 - [Introduction](#Introduction)
-  - [Step 1: sterEOS Advanced Spine Workflow File Preparation](#Step-1-Advanced-Spine-Workflow-File-Preparation)
+  - [Step 1: sterEOS Advanced Spine Workflow File Preparation](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation)
   - [Step 2: Setup](#Step-2-Setup)
   - [Step 3: Data Aggregations](#Step-3-Data-Aggregations)
+  - [Tutorial Video](#Tutorial-Video)
 - [Understanding the Mizzou 3D SPinE Result File ](#Understanding-the-Mizzou-3D-SPinE-Result-File)
 
 # Introduction
@@ -100,7 +101,16 @@ This program directs the user to specify the parent folder where all sterEOS Adv
 
 Once the input and output file locations have been specified, **Mizzou 3D SPinE** will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the **Mizzou 3D SPinE** was run (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)).
 
-## Understanding the Mizzou 3D SPinE Result File 
+## Tutorial Video
+We also provided some tutorial videos for running Mizzou 3D SPinE. 
+
+[Organize Your sterEOS Advanced Spine Workflow Files](https://youtu.be/p60OF4-_Xqg)
+[Download RStudio](https://youtu.be/X5EOP-PvS_E)
+[Run Mizzou 3D SPinE](https://youtu.be/9jgdsWb5gXM)
+
+
+
+# Understanding the Mizzou 3D SPinE Result File 
 Extracted measurements for each sterEOS Advanced Spine Workflow assessment are combined into one row in the newly aggregated **Mizzou 3D SPineE** result file.  Patients with multiple assessments will have each assessment appear in one row, indexed by visit date.  The aggregated measurements are color coded to denote their original location in the sterEOS Advanced Spine Workflow file from which the measurement was extracted. Further, all variable names are named using the abbreviation from the location headers in the original sterEOS Advanced Spine Workflow Excel file.  For example, all measurements from “Scolisosis Parameters” are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb Angle of the thoracolumbar deformity in the patient plane.  
 In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)), one tab called “Merged Data” contains all the aggregated measurements, and a separate tab called “Data Dictionary” contains a data dictionary that defines all measures and indicates the appropriate color coding. 
 
