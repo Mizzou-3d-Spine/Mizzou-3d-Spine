@@ -104,9 +104,11 @@ Once the input and output file locations have been specified, **Mizzou 3D SPinE*
 ## Tutorial Video
 We also provided some tutorial videos for running Mizzou 3D SPinE. 
 
-[Organize Your sterEOS Advanced Spine Workflow Files](https://youtu.be/p60OF4-_Xqg)
-[Download RStudio](https://youtu.be/X5EOP-PvS_E)
-[Run Mizzou 3D SPinE](https://youtu.be/9jgdsWb5gXM)
+[Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/p60OF4-_Xqg)
+
+[Step 2: Downloading RStudio](https://youtu.be/X5EOP-PvS_E)
+
+[Step 3: Running Mizzou 3D SPinE](https://youtu.be/9jgdsWb5gXM)
 
 
 
