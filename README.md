@@ -6,7 +6,7 @@ A program used to extract measurements from sterEOS Advanced Spine Workflow outp
   - [Step 1: sterEOS Advanced Spine Workflow File Preparation](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation)
   - [Step 2: Setup](#Step-2-Setup)
   - [Step 3: Data Aggregations](#Step-3-Data-Aggregations)
-  - [Tutorial Video](#Tutorial-Video)
+  - [Tutorial Videos](#Tutorial-Videos)
 - [Understanding the Mizzou 3D SPinE Result File ](#Understanding-the-Mizzou-3D-SPinE-Result-File)
 
 # Introduction
@@ -101,7 +101,7 @@ This program directs the user to specify the parent folder where all sterEOS Adv
 
 Once the input and output file locations have been specified, **Mizzou 3D SPinE** will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the **Mizzou 3D SPinE** was run (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)).
 
-## Tutorial Video
+## Tutorial Videos
 We also provided some tutorial videos for running Mizzou 3D SPinE. 
 
 [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/p60OF4-_Xqg)
