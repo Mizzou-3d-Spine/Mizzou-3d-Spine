@@ -105,7 +105,7 @@ Once the input and output file locations have been specified, **Mizzou 3D SPinE*
 
 [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo)
 
-[Step 2: Downloading R](https://youtu.be/X5EOP-PvS_E)
+[Step 2: Downloading R](https://youtu.be/Tnhar3ZZvso)
 
 [Step 3: Running Mizzou 3D SPinE](https://youtu.be/TbqeDwD3G5g)
 
