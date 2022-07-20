@@ -36,8 +36,8 @@ To use **Mizzou 3D SPinE**, files must be named and organized in a specified for
 ---
 
 ## Step 2: Setup
-### Downloading RStudio
-Users can find and download RStudio Desktop at [https://www.rstudio.com](https://www.rstudio.com/products/rstudio/download/#download).
+### Downloading R
+Users can find and download R Desktop at [https://www.r-project.org/](https://mirror.las.iastate.edu/CRAN/).
 
 ### Loading Mizzou 3D SPinE
 Once the users open RStudio, it should appear like this (Figure 2):
@@ -53,7 +53,7 @@ Once the users open RStudio, it should appear like this (Figure 2):
 ---
 
 
-Then users could copy the following code and paste into RStudio, then press the "Enter" key (Figure 3):
+Then users could copy the following code and paste into R, then press the "Enter" key (Figure 3):
 
 
 ```r
@@ -103,11 +103,11 @@ Once the input and output file locations have been specified, **Mizzou 3D SPinE*
 
 ## Tutorial Videos
 
-[Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/p60OF4-_Xqg)
+[Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo)
 
-[Step 2: Downloading RStudio](https://youtu.be/X5EOP-PvS_E)
+[Step 2: Downloading R](https://youtu.be/X5EOP-PvS_E)
 
-[Step 3: Running Mizzou 3D SPinE](https://youtu.be/9jgdsWb5gXM)
+[Step 3: Running Mizzou 3D SPinE](https://youtu.be/TbqeDwD3G5g)
 
 
 
