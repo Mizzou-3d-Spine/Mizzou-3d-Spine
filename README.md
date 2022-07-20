@@ -5,7 +5,7 @@ A program used to extract measurements from sterEOS Advanced Spine Workflow outp
 - [Introduction](#Introduction)
   - [Step 1: sterEOS Advanced Spine Workflow File Preparation](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation)
   - [Step 2: Setup](#Step-2-Setup)
-  - [Step 3: Data Aggregations](#Step-3-Data-Aggregations)
+  - [Step 3: Running Mizzou 3D SPinE](#Step-3-Running-Mizzou-3D-SPinE)
   - [Tutorial Videos](#Tutorial-Videos)
 - [Understanding the Mizzou 3D SPinE Result File ](#Understanding-the-Mizzou-3D-SPinE-Result-File)
 
