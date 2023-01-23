@@ -1,3 +1,4 @@
+Permissions-Policy: interest-cohort=()
 # Mizzou 3D SPinE 
 A program used to extract measurements from sterEOS Advanced Spine Workflow output
 
