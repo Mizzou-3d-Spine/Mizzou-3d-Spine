@@ -1,3 +1,4 @@
+Permissions-Policy: geolocation=()
 # Mizzou 3D SPinE 
 A program used to extract measurements from sterEOS Advanced Spine Workflow output
 
@@ -48,7 +49,7 @@ Once the users open RStudio, it should appear like this (Figure 2):
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/R_Studio.png" width="800">
+  <img src="https://mizzou-3d-spine.github.io/Mizzou-3d-Spine/blob/main/Fig/R_Studio.png" width="800">
 </p>
 ---
 
