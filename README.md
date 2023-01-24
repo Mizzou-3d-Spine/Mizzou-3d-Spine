@@ -31,7 +31,7 @@ To use **Mizzou 3D SPinE**, files must be named and organized in a specified for
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/FilePath.png" width="400">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/FilePath.png" width="400">
 </p>
 
 ---
