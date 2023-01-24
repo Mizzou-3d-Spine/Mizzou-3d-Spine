@@ -1,4 +1,3 @@
-Permissions-Policy: geolocation=()
 # Mizzou 3D SPinE 
 A program used to extract measurements from sterEOS Advanced Spine Workflow output
 
