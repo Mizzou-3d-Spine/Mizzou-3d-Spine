@@ -49,7 +49,7 @@ Once the users open RStudio, it should appear like this (Figure 2):
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/R_Studio.png" width="800">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/R_Studio.png" width="800">
 </p>
 ---
 
@@ -72,7 +72,7 @@ datamerge()
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Loading_Program.PNG" width="800">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Loading_Program.PNG" width="800">
 </p>
 
 ---
@@ -87,7 +87,7 @@ This program directs the user to specify the parent folder where all sterEOS Adv
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Input.PNG" width="600">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Input.PNG" width="600">
 </p>
 
 <p align="center">
