@@ -94,7 +94,7 @@ This program directs the user to specify the parent folder where all sterEOS Adv
 </p>
 
 <p align="center">
-  <img src="https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Output.PNG" width="600">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Fig/Data_Aggregation_Output.PNG" width="600">
 </p>
 
 ---
