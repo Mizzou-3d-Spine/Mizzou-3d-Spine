@@ -3,10 +3,10 @@ A program used to extract measurements from sterEOS Advanced Spine Workflow outp
 
 # Content
 - [Introduction](#Introduction)
+  - [Tutorial Videos](#Tutorial-Videos)
   - [Step 1: sterEOS Advanced Spine Workflow File Preparation](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation)
   - [Step 2: Setup](#Step-2-Setup)
   - [Step 3: Running Mizzou 3D SPinE](#Step-3-Running-Mizzou-3D-SPinE)
-  - [Tutorial Videos](#Tutorial-Videos)
 - [Understanding the Mizzou 3D SPinE Result File ](#Understanding-the-Mizzou-3D-SPinE-Result-File)
 
 # Introduction
@@ -20,6 +20,15 @@ This file contains the measurements for
   - 3D Tools  
 
 For each of these sections, the name of each measurement, along with the measured value, are extracted, such that each measurement label is formatted as a column name and the measured value is extracted as the value for that column, in the resulting **Mizzou 3D SPinE** output file.  The output file is formatted such that each row of data, corresponds to one assessment for one individual; multiple assessments for one individual are organized by their participant id and date of assesmsent, in separate rows. Any measurements that are missing or empty from the sterEOS Advanced Spine Workflow .xlsx file are empty in the output file. 
+
+## Tutorial Videos
+
+[Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo)
+
+[Step 2: Downloading R](https://youtu.be/Tnhar3ZZvso)
+
+[Step 3: Running Mizzou 3D SPinE](https://youtu.be/TbqeDwD3G5g)
+
 
 ## Step 1: sterEOS Advanced Spine Workflow File Preparation
 To use **Mizzou 3D SPinE**, files must be named and organized in a specified format.  All patient assessments, intended for use with the **Mizzou 3D SPinE** should be saved within a single parent folder, for example, “Test Data”, as shown in Figure 1.  The parent folder should not contain any files, data, or subfolders which are not output from the sterEOS Advanced Spine Workflow.  Empty folders should also not be saved within the parent folder. Within the parent folder, each patient should have a folder in which all files for each sterEOS assessment for that patient should be saved. This folder should be named using the patient identifier. Then, output files for each sterEOS assessment for each individual patient should be saved within a subfolder, named with the EOS assessment date using the “MM-DD-YYYY” format and located within each patient folder. The resulting file structure should be that all output files for the sterEOS Advanced Spine Workflow associated with each patient-specific sterEOS Advanced Spine Workflow assessment has its own folder, named using the date, and that these are all stored within the main folder for each patient, named using the numerical patient identifier (Figure 1). An example of the organized sterEOS Advanced Spine Workflow file is available at [Mizzou 3D SPinE Demo Patient Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data) ([Download the Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data.zip)).
@@ -100,14 +109,6 @@ This program directs the user to specify the parent folder where all sterEOS Adv
 ---
 
 Once the input and output file locations have been specified, **Mizzou 3D SPinE** will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the **Mizzou 3D SPinE** was run (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)).
-
-## Tutorial Videos
-
-[Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo)
-
-[Step 2: Downloading R](https://youtu.be/Tnhar3ZZvso)
-
-[Step 3: Running Mizzou 3D SPinE](https://youtu.be/TbqeDwD3G5g)
 
 
 
