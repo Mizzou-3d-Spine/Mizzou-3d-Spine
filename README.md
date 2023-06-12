@@ -8,6 +8,7 @@ A program used to extract measurements from sterEOS Advanced Spine Workflow outp
   - [Step 2: Setup](#Step-2-Setup)
   - [Step 3: Running Mizzou 3D SPinE](#Step-3-Running-Mizzou-3D-SPinE)
 - [Understanding the Mizzou 3D SPinE Result File ](#Understanding-the-Mizzou-3D-SPinE-Result-File)
+- [Troubleshooting/FAQ’s](#Troubleshooting/FAQ’s)
 
 # Introduction
 **Mizzou 3D SPinE** is used to extract and organize measurement data taken from sterEOS Advanced Spine Workflow assessments.  **Mizzou 3D SPinE** is capable of extracting measurement data taken from multiple assessments for an individual and/or many individuals.
@@ -115,5 +116,21 @@ Once the input and output file locations have been specified, **Mizzou 3D SPinE*
 # Understanding the Mizzou 3D SPinE Result File 
 Extracted measurements for each sterEOS Advanced Spine Workflow assessment are combined into one row in the newly aggregated **Mizzou 3D SPineE** result file.  Patients with multiple assessments will have each assessment appear in one row, indexed by visit date.  The aggregated measurements are color coded to denote their original location in the sterEOS Advanced Spine Workflow file from which the measurement was extracted. Further, all variable names are named using the abbreviation from the location headers in the original sterEOS Advanced Spine Workflow Excel file.  For example, all measurements from “Scolisosis Parameters” are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb Angle of the thoracolumbar deformity in the patient plane.  
 In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)), one tab called “Merged Data” contains all the aggregated measurements, and a separate tab called “Data Dictionary” contains a data dictionary that defines all measures and indicates the appropriate color coding. 
+
+
+# Troubleshooting/FAQ’s
+
+### Can I organize my sterEOS files whatever I want? 
+
+No. The sterEOS Advanced Spine Workflow files must be organized in a specified structure. This structure is how the **Mizzou 3D SPineE** will recognize the patient or participant ID's and visit date to correctly merge the assessment files.  As noted in our publication, the time required to reconfigure and/or resave sterEOS files using this structure is minimal but is a necessary step to successfully aggregate the data in a consistent format. See [here](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation) for the details and follow the instructions in the tutorial videos [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo).
+
+### I can’t find the download file (*.R* file). 
+
+Navigate to your downloads folder and search there. If the **Mizzou 3D SPineE** is not located there, return to the GitHub site and retry downloading. Ensure you don’t have any pop-up blockers inhibiting the download.
+
+### When I run the program, I get some error messages and no output is created. 
+This can mean one of two things. 
+First, double check that you **ONLY** have sterEOS files in the input folder and check that you have organized **ALL** sterEOS files following the instructions in the tutorial videos [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo). Even one mistake in the file structure will prevent the **Mizzou 3D SPineE** from working. 
+Second, if your input/output directory is not selected properly, the **Mizzou 3D SPineE** won't be able to work. Check the tutorial video [Step 3: Running Mizzou 3D SPinE](#Step-3-Running-Mizzou-3D-SPinE) as noted. If you still have problems after reading the instructions and watching the tutorial videos, please email the **Mizzou 3D SPineE** administrator at mizzou3dspine@umsystem.edu and we will work with you directly.
 
 
