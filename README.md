@@ -4,7 +4,7 @@
 # Content
 - [Introduction](#Introduction)
   - [Tutorial Videos](#Tutorial-Videos)
-  - [Step 1: File Preparation](#Step-1-File-Preparatio)
+  - [Step 1: File Preparation](#Step-1-File-Preparation)
   - [Step 2: Setup](#Step-2-Setup)
   - [Step 3: Running Mizzou 3D SPinE](#Step-3-Running-Mizzou-3D-SPinE)
 - [Understanding the Mizzou 3D SPinE Result File](#Understanding-the-Mizzou-3D-SPinE-Result-File)
