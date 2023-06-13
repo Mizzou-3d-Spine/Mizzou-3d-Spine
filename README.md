@@ -121,17 +121,17 @@ In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com
 
 # Troubleshooting/FAQ’s
 
-### Can I organize my sterEOS  files whatever I want? 
+### Can I put all my sterEOS files in one folder? 
 
-No. The sterEOS Advanced Spine Workflow files must be organized in a specified structure. This structure is how the **Mizzou 3D SPineE** will recognize the patient or participant ID's and visit date to correctly merge the assessment files.  As noted in our publication, the time required to reconfigure and/or resave sterEOS files using this structure is minimal but is a necessary step to successfully aggregate the data in a consistent format. See [here](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation) for the details and follow the instructions in the tutorial videos [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo).
+No. The sterEOS Advanced Spine Workflow files must be organized in a specified structure. This structure is how the **Mizzou 3D SPineE** will recognize the patient or participant ID's and visit date to correctly merge the assessment files.  As noted in our publication, the time required to reconfigure and/or resave sterEOS files using this structure is minimal but is a necessary step to successfully aggregate the data in a consistent format. See the [Step 1: sterEOS Advanced Spine Workflow File Preparatio](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation) section for more details and follow the instructions in the tutorial videos [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo).
 
-### I can’t find the download file (*.R* file). 
+### I can’t find the download files (*Function.R* and *Mizzou 3D SPinE.R* files). 
 
 Navigate to your downloads folder and search there. If the **Mizzou 3D SPineE** is not located there, return to the GitHub site and retry downloading. Ensure you don’t have any pop-up blockers inhibiting the download.
 
 ### When I run the program, I get some error messages and no output is created. 
 This can mean one of two things. 
-First, double check that you **ONLY** have sterEOS files in the input folder and check that you have organized **ALL** sterEOS files following the instructions in the tutorial videos [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo). Even one mistake in the file structure will prevent the **Mizzou 3D SPineE** from working. 
+First, double check that you **ONLY** have sterEOS files in the input folder and check that you have organized **ALL** sterEOS files following the instructions in the tutorial videos [Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo). Even one mistake in the file structure will prevent **Mizzou 3D SPineE** from working. 
 Second, if your input/output directory is not selected properly, the **Mizzou 3D SPineE** won't be able to work. Check the tutorial video [Step 3: Running Mizzou 3D SPinE](#Step-3-Running-Mizzou-3D-SPinE) as noted. If you still have problems after reading the instructions and watching the tutorial videos, please email the **Mizzou 3D SPineE** administrator at mizzou3dspine@umsystem.edu and we will work with you directly.
 
 
