@@ -33,6 +33,7 @@ In the output file for **Mizzou 3D SPinE**, the name of each measurement, along 
 
 
 ## Step 1: File Preparation
+
 To use **Mizzou 3D SPinE**, all Excel Files data files generated from Full Spine 3D Reconstructions in sterEOS must be named and organized in a specified format. 
 
  - Each patient should have their own folder, and within that folder, each biplanar stereo-radiographic reconstruction assessment (.xlsx file) should have its own folder. All patient folders should be named using the patient identifier only in numerical format (Figure 1).  
@@ -54,6 +55,7 @@ An example of the organized input folder is available at [Mizzou 3D SPinE Demo P
 ---
 
 ## Step 2: Setup
+
 ### Downloading R
 Users can find and download R Desktop at [https://www.r-project.org/](https://mirror.las.iastate.edu/CRAN/). Note that R is an application, so downloading and installation may require the aid of one’s technical support department or temporary administrative privileges. Users are encouraged to refer to the second tutorial video if issues downloading or installing R arise.  
 
@@ -123,6 +125,7 @@ Once the input and output file locations have been specified, **Mizzou 3D SPinE*
 
 
 # Understanding the Mizzou 3D SPinE Result File
+
 Extracted measurements for each bi-planar three-dimensional reconstructions using sterEOS are combined into one row in the newly aggregated **Mizzou 3D SPinE** result file. Patients with multiple assessments will have each assessment appear in one row, indexed by visit date. The aggregated measurements are color coded to denote their original location in the assessment file from which the measurement was extracted. Further, all variable names are named using the abbreviation from the location headers in the original assessment file. For example, all measurements from “Scolisosis Parameters” are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb Angle of the thoracolumbar deformity in the patient plane.
 In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)), one tab called “Merged Data” contains all the aggregated measurements, and a separate tab called “Data Dictionary” contains a data dictionary that defines all measures and indicates the appropriate color coding.
 
