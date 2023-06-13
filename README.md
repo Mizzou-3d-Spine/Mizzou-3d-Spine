@@ -1,18 +1,18 @@
 # Mizzou 3D SPinE 
-A program used to extract measurements from sterEOS Advanced Spine Workflow output
+**Mizzou 3D SPinE** is used to automate the extraction and organization of measurement data taken from bi-planar three-dimensional reconstructions.  
 
 # Content
 - [Introduction](#Introduction)
   - [Tutorial Videos](#Tutorial-Videos)
-  - [Step 1: sterEOS Advanced Spine Workflow File Preparation](#Step-1-sterEOS-Advanced-Spine-Workflow-File-Preparation)
+  - [Step 1: File Preparation](#Step-1-File-Preparatio)
   - [Step 2: Setup](#Step-2-Setup)
   - [Step 3: Running Mizzou 3D SPinE](#Step-3-Running-Mizzou-3D-SPinE)
-- [Understanding the Mizzou 3D SPinE Result File ](#Understanding-the-Mizzou-3D-SPinE-Result-File)
+- [Understanding the Mizzou 3D SPinE Result File](#Understanding-the-Mizzou-3D-SPinE-Result-File)
 - [Troubleshooting/FAQ’s](#TroubleshootingFAQs)
 
 # Introduction
-**Mizzou 3D SPinE** is used to extract and organize measurement data taken from sterEOS Advanced Spine Workflow assessments.  **Mizzou 3D SPinE** is capable of extracting measurement data taken from multiple assessments for an individual and/or many individuals.
-This file contains the measurements for 
+Specifically, **Mizzou 3D SPinE** was developed using reconstructions using EOS™ III (Version 3.7.5.8463) with scan parameters (1) Full Spine, (2) Morphotype 1, (3) Scan Speed 4.  The image sets were reconstructed using sterEOS and the resulting Advanced Spine Workflow Excel File (.xlsx file type) is the data source for **Mizzou 3D SPinE**. **Mizzou 3D SPinE** is capable of extracting measurement data taken from multiple assessments for an individual and/or many individuals. In the Advanced Spine Workflow Excel file, the following information is contained: 
+
   - Scoliosis Parameters
   - Sagittal Balance
   - Vertebral Orientations for the frontal, lateral, and axial views in both the patient and radio planes
@@ -20,23 +20,31 @@ This file contains the measurements for
   - Pelvic parameters for both the patient and Radio plane
   - 3D Tools  
 
-For each of these sections, the name of each measurement, along with the measured value, are extracted, such that each measurement label is formatted as a column name and the measured value is extracted as the value for that column, in the resulting **Mizzou 3D SPinE** output file.  The output file is formatted such that each row of data, corresponds to one assessment for one individual; multiple assessments for one individual are organized by their participant id and date of assesmsent, in separate rows. Any measurements that are missing or empty from the sterEOS Advanced Spine Workflow .xlsx file are empty in the output file. 
+In the output file for **Mizzou 3D SPinE**, the name of each measurement, along with the measured value, are extracted. The output file is organized such that each measurement label is formatted as a column name and the measured value is extracted as the value for that column. The output file is formatted such that each row of data corresponds to one assessment for one individual, and multiple assessments for one individual are organized by their participant id and date of assessment, in separate rows. Any measurements that are missing or empty from the Advanced Spine Workflow .xlsx file are empty in the output file.
+
 
 ## Tutorial Videos
 
-[Step 1: Organizing Your sterEOS Advanced Spine Workflow Files](https://youtu.be/9gb7o3fIZZo)
+[Step 1: Organizing Your Files](https://youtu.be/9gb7o3fIZZo)
 
 [Step 2: Downloading R](https://youtu.be/Tnhar3ZZvso)
 
 [Step 3: Running Mizzou 3D SPinE](https://youtu.be/TbqeDwD3G5g)
 
 
-## Step 1: sterEOS Advanced Spine Workflow File Preparation
-To use **Mizzou 3D SPinE**, files must be named and organized in a specified format.  All patient assessments, intended for use with the **Mizzou 3D SPinE** should be saved within a single parent folder, for example, “Test Data”, as shown in Figure 1.  The parent folder should not contain any files, data, or subfolders which are not output from the sterEOS Advanced Spine Workflow.  Empty folders should also not be saved within the parent folder. Within the parent folder, each patient should have a folder in which all files for each sterEOS assessment for that patient should be saved. This folder should be named using the patient identifier. Then, output files for each sterEOS assessment for each individual patient should be saved within a subfolder, named with the EOS assessment date using the “MM-DD-YYYY” format and located within each patient folder. The resulting file structure should be that all output files for the sterEOS Advanced Spine Workflow associated with each patient-specific sterEOS Advanced Spine Workflow assessment has its own folder, named using the date, and that these are all stored within the main folder for each patient, named using the numerical patient identifier (Figure 1). An example of the organized sterEOS Advanced Spine Workflow file is available at [Mizzou 3D SPinE Demo Patient Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data) ([Download the Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data.zip)).
+## Step 1: File Preparation
+To use **Mizzou 3D SPinE**, all Excel Files data files generated from Full Spine 3D Reconstructions in sterEOS must be named and organized in a specified format. 
+
+ - Each patient should have their own folder, and within that folder, each biplanar stereo-radiographic reconstruction assessment (.xlsx file) should have its own folder. All patient folders should be named using the patient identifier only in numerical format (Figure 1).  
+ - The folder for each assessment should be renamed using the date of the assessment in the “MM-DD-YYYY” format. Note that using the date format as the file name allows **Mizzou 3D SPinE** to organize data from longitudinal biplanar stereo-radiographic reconstruction assessments. 
+ - Then, all patient folders should be located within one folder, the "input" folder, which has no formatting requirement. The input folder should not contain any files, data, or subfolders which are not output from the biplanar stereo-radiography reconstructions. Empty folders should also not be saved within the input folder.
+ - A separate output folder should be created, separate from and outside of the input folder. 
+
+An example of the organized input folder is available at [Mizzou 3D SPinE Demo Patient Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data) ([Download the Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data.zip)).
 
 ---
 <p align="center">
-    <em> Figure 1: sterEOS File Preparation </em>
+    <em> Figure 1: File Organization and example format </em>
 </p>
 
 <p align="center">
@@ -47,7 +55,7 @@ To use **Mizzou 3D SPinE**, files must be named and organized in a specified for
 
 ## Step 2: Setup
 ### Downloading R
-Users can find and download R Desktop at [https://www.r-project.org/](https://mirror.las.iastate.edu/CRAN/).
+Users can find and download R Desktop at [https://www.r-project.org/](https://mirror.las.iastate.edu/CRAN/). Note that R is an application, so downloading and installation may require the aid of one’s technical support department or temporary administrative privileges. Users are encouraged to refer to the second tutorial video if issues downloading or installing R arise.  
 
 ### Loading Mizzou 3D SPinE
 Once the users open RStudio, it should appear like this (Figure 2):
@@ -58,13 +66,12 @@ Once the users open RStudio, it should appear like this (Figure 2):
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/R_Studio.png" width="800">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/R_Window.png" width="800">
 </p>
 ---
 
 
 Then users could copy the following code and paste into R, then press the "Enter" key (Figure 3):
-
 
 ```r
 if(!require("devtools")){
@@ -77,26 +84,27 @@ datamerge()
 
 ---
 <p align="center">
-    <em> Figure 3: Loading the Function.R program </em> 
+    <em> Figure 3: Loading Mizzou 3D SPinE  </em> 
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Loading_Program.PNG" width="800">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Loading_Program.png" width="800">
 </p>
 
 ---
 
 
 ## Step 3: Running Mizzou 3D SPinE
-This program directs the user to specify the parent folder where all sterEOS Advanced Spine Workflow patient assessments were saved (Figure 4), and the output folder file path where the user would like the aggregated data to be saved (Figure 5). The output folder must be outside of the parent folder. 
+
+This program directs the user to specify the input folder where all patient assessments were saved (Figure 4), and the output folder file path where the user would like the aggregated data to be saved (Figure 5). The output folder must be outside of the input folder.
 
 ---
 <p align="center">
-    <em> Figure 4: Selecting the path of parent folder </em>
+    <em> Figure 4: Selecting the path of input folder </em>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Data_Aggregation_Input.PNG" width="600">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Data_Aggregation_Input.png" width="600">
 </p>
 
 <p align="center">
@@ -104,18 +112,20 @@ This program directs the user to specify the parent folder where all sterEOS Adv
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Data_Aggregation_Output.PNG" width="600">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Data_Aggregation_Output.png" width="600">
 </p>
 
 ---
+
 
 Once the input and output file locations have been specified, **Mizzou 3D SPinE** will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the **Mizzou 3D SPinE** was run (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)).
 
 
 
-# Understanding the Mizzou 3D SPinE Result File 
-Extracted measurements for each sterEOS Advanced Spine Workflow assessment are combined into one row in the newly aggregated **Mizzou 3D SPineE** result file.  Patients with multiple assessments will have each assessment appear in one row, indexed by visit date.  The aggregated measurements are color coded to denote their original location in the sterEOS Advanced Spine Workflow file from which the measurement was extracted. Further, all variable names are named using the abbreviation from the location headers in the original sterEOS Advanced Spine Workflow Excel file.  For example, all measurements from “Scolisosis Parameters” are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb Angle of the thoracolumbar deformity in the patient plane.  
-In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)), one tab called “Merged Data” contains all the aggregated measurements, and a separate tab called “Data Dictionary” contains a data dictionary that defines all measures and indicates the appropriate color coding. 
+# Understanding the Mizzou 3D SPinE Result File
+Extracted measurements for each bi-planar three-dimensional reconstructions using sterEOS are combined into one row in the newly aggregated **Mizzou 3D SPinE** result file. Patients with multiple assessments will have each assessment appear in one row, indexed by visit date. The aggregated measurements are color coded to denote their original location in the assessment file from which the measurement was extracted. Further, all variable names are named using the abbreviation from the location headers in the original assessment file. For example, all measurements from “Scolisosis Parameters” are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb Angle of the thoracolumbar deformity in the patient plane.
+In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)), one tab called “Merged Data” contains all the aggregated measurements, and a separate tab called “Data Dictionary” contains a data dictionary that defines all measures and indicates the appropriate color coding.
+
 
 
 
