@@ -41,7 +41,7 @@ To use **Mizzou 3D SPinE**, all Excel Files data files generated from Full Spine
  - Then, all patient folders should be located within one folder, the "input" folder, which has no formatting requirement. The input folder should not contain any files, data, or subfolders which are not output from the biplanar stereo-radiography reconstructions. Empty folders should also not be saved within the input folder.
  - A separate output folder should be created, separate from and outside of the input folder. 
 
-An example of the organized input folder is available at [Mizzou 3D SPinE Demo Patient Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data) ([Download the Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data.zip)).
+An example of the organized input folder is available at [Mizzou 3D SPinE Demo Patient Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Mizzou-3d-Spine-v1.0/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data) ([Download the Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data.zip)).
 
 ---
 <p align="center">
@@ -49,7 +49,7 @@ An example of the organized input folder is available at [Mizzou 3D SPinE Demo P
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/File_Path.png" width="400">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Mizzou-3d-Spine-v1.0/Fig/File_Path.png" width="400">
 </p>
 
 ---
@@ -68,7 +68,7 @@ Once the users open RStudio, it should appear like this (Figure 2):
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/R_Window.png" width="800">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Mizzou-3d-Spine-v1.0/Fig/R_Window.png" width="800">
 </p>
 ---
 
@@ -79,7 +79,7 @@ Then users could copy the following code and paste into R, then press the "Enter
 if(!require("devtools")){
   install.packages("devtools")
 }
-devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Code/Function.R")
+devtools::source_url("https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Mizzou-3d-Spine-v1.0/Code/Function.R")
 
 datamerge()
 ```
@@ -90,7 +90,7 @@ datamerge()
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Loading_Program.png" width="800">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Mizzou-3d-Spine-v1.0/Fig/Loading_Program.png" width="800">
 </p>
 
 ---
@@ -106,7 +106,7 @@ This program directs the user to specify the input folder where all patient asse
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Data_Aggregation_Input.png" width="600">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Mizzou-3d-Spine-v1.0/Fig/Data_Aggregation_Input.png" width="600">
 </p>
 
 <p align="center">
@@ -114,20 +114,20 @@ This program directs the user to specify the input folder where all patient asse
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Fig/Data_Aggregation_Output.png" width="600">
+  <img src="https://raw.githubusercontent.com/Mizzou-3d-Spine/Mizzou-3d-Spine/main/Mizzou-3d-Spine-v1.0/Fig/Data_Aggregation_Output.png" width="600">
 </p>
 
 ---
 
 
-Once the input and output file locations have been specified, **Mizzou 3D SPinE** will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the **Mizzou 3D SPinE** was run (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)).
+Once the input and output file locations have been specified, **Mizzou 3D SPinE** will aggregate all data into a single file “MergedData_YYYYMMDD.xlsx” in the assigned output folder, where the “YYYYMMDD” corresponds to the date that the **Mizzou 3D SPinE** was run (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Mizzou-3d-Spine-v1.0/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)).
 
 
 
 # Understanding the Mizzou 3D SPinE Result File
 
 Extracted measurements for each biplanar three-dimensional reconstructions using sterEOS are combined into one row in the newly aggregated **Mizzou 3D SPinE** result file. Patients with multiple assessments will have each assessment appear in one row, indexed by visit date. The aggregated measurements are color coded to denote their original location in the assessment file from which the measurement was extracted. Further, all variable names are named using the abbreviation from the location headers in the original assessment file. For example, all measurements from “Scolisosis Parameters” are colored salmon and the variable names have been defined using the location of the parameter, e.g., LumbarCobbPP denotes the Cobb Angle of the thoracolumbar deformity in the patient plane.
-In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)), one tab called “Merged Data” contains all the aggregated measurements, and a separate tab called “Data Dictionary” contains a data dictionary that defines all measures and indicates the appropriate color coding.
+In the **Mizzou 3D SPinE** output file, (see [output example](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Mizzou-3d-Spine-v1.0/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Output)), one tab called “Merged Data” contains all the aggregated measurements, and a separate tab called “Data Dictionary” contains a data dictionary that defines all measures and indicates the appropriate color coding.
 
 
 
