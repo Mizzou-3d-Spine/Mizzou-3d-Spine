@@ -41,7 +41,7 @@ To use **Mizzou 3D SPinE**, all Excel Files data files generated from Full Spine
  - Then, all patient folders should be located within one folder, the "input" folder, which has no formatting requirement. The input folder should not contain any files, data, or subfolders which are not output from the biplanar stereo-radiography reconstructions. Empty folders should also not be saved within the input folder.
  - A separate output folder should be created, separate from and outside of the input folder. 
 
-An example of the organized input folder is available at [Mizzou 3D SPinE Demo Patient Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Mizzou-3d-Spine-v1.0/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data) ([Download the Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data.zip)).
+An example of the organized input folder is available at [Mizzou 3D SPinE Demo Patient Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/tree/main/Mizzou-3d-Spine-v1.0/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data) ([Download the Example Data](https://github.com/Mizzou-3d-Spine/Mizzou-3d-Spine/blob/main/Mizzou-3d-Spine-v1.0/Example%20Data/Mizzou%203D%20SPinE%20Demo%20Patient%20Data.zip)).
 
 ---
 <p align="center">
