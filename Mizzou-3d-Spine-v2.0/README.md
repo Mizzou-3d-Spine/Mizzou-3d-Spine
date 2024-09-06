@@ -111,6 +111,39 @@ This program will direct you to specify the input folder where all patient asses
    - A directory selection dialog will appear. Navigate to the folder where you want the merged data to be saved.
    - Select the directory and click "OK". The path to the selected directory will automatically populate the "Output Path" entry field.
 
+#### Select Apex Data *Optional
+
+This field is **not required**. If you are only interested in the original data, you may skip this section and click the "Merge Data" button after selecting the Input and Output folders.
+
+1. **Locate the "Apex Data File" section**:
+   - You will see a label named "Apex Data File (Optional):" followed by a text entry field and a "Browse" button.
+2. **Set the Apex Data**:
+   - Click the "Browse" button next to the Apex Data File field.
+   - A directory selection dialog will appear. Navigate to the Apex data file in .csv format.
+   - Select the Apex data and click "OK". The path to the selected Apex data file will automatically populate the "Apex Data File" entry field.
+
+**What is Apex data**
+
+In addition to the original data, we also offer the option to retrieve measurements from one or two levels above and below the instrumented segment. The Apex data focuses on capturing and analyzing rotation measurements at specific spinal levels relative to the apex of the curvature. The data file should include:
+
+* a column for the patient identifier (labeled "Patient ID"),
+* a column for the visit date (labeled "Visit Date"), and
+* two columns indicating the apex level, either in the thoracic (labeled "ApexT") or lumbar (labeled "ApexL") regions, with each segment identified by a label (e.g., "T1", "T2", ..., "L5").
+
+The final output provides a comprehensive set of rotation values for each patient and visit, including measurements from the levels directly adjacent to and surrounding the apex, offering a detailed view of spinal curvature dynamics.')
+
+Here is an example of Apex data
+
+Table 1: Example of Apex Data
+
+| Patient ID | Visit Date | ApexT | ApexL |
+|------------|------------|-------|-------|
+| 123        | 20220101   | T8    |       |
+| 124        | 20220101   |       | L1    |
+| 124        | 20220430   |       | L5    |
+| 124        | 20220609   | T9    | L1    |
+
+
 #### Merge the Data
 1. **Initiate the Merge Process**:
    - Once both the Input and Output paths are correctly set, click the "Merge Data" button located at the bottom of the GUI.
@@ -144,7 +177,7 @@ Navigate to your downloads folder and search there. If the **Mizzou 3D SPineE** 
 #### When I run the program, I get some error messages and no output is created. 
 This can mean one of two things. 
 First, double check that you **ONLY** have sterEOS files in the input folder and check that you have organized **ALL** sterEOS files following the instructions in the tutorial videos [Tutorial 1: Organizing Your Files](https://youtu.be/n68Wf7il6U4). Even one mistake in the file structure will prevent **Mizzou 3D SPineE** from working. 
-Second, if your input/output directory is not selected properly, the **Mizzou 3D SPineE** won't be able to work. Check the tutorial video [Tutorial 3: Running Mizzou 3D SPinE](https://youtu.be/TbqeDwD3G5g) as noted. If you still have problems after reading the instructions and watching the tutorial videos, please email the **Mizzou 3D SPineE** administrator at mizzou3dspine@umsystem.edu and we will work with you directly.
+Second, if your input/output directory is not selected properly, the **Mizzou 3D SPineE** won't be able to work. If you still have problems after reading the instructions and watching the tutorial videos, please email the **Mizzou 3D SPineE** administrator at mizzou3dspine@umsystem.edu and we will work with you directly.
 
 
 
